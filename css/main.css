@@ -8,12 +8,20 @@
   transition: all .5s linear;
 }
 
-.smiley:hover .left-ear {
+#bear:hover #left-ear {
   animation: wiggle 3s linear;
 }
 
-.smiley:hover .right-ear {
+#bear:hover #right-ear {
   animation: wiggle 3s linear;
+}
+
+#left-eye {
+  animation: eye 3s linear;
+}
+
+#right-eye {
+  animation: eye 3s linear;
 }
 
 @keyframes wiggle {
@@ -23,7 +31,19 @@
   }
 
   to {
-    transform: rotate(100deg);
+    transform: rotate(50deg);
+  }
+
+}
+
+@keyframes eye {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(10deg);
   }
 
 }

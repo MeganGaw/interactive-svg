@@ -1,0 +1,17 @@
+.left-ear {
+  transform: rotate(80deg);
+  transition: all .5s linear;
+}
+
+.right-ear {
+  transform: rotate(100deg);
+  transition: all .5s linear;
+}
+
+.smiley:hover .left-ear {
+  transform: rotate(100deg);
+}
+
+.smiley:hover .right-ear {
+  transform: rotate(80deg);
+}
